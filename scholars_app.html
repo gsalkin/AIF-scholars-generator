@@ -1,93 +1,96 @@
-<style type="text/css">
-            td {
-                font-family: 'Lato', Arial, Helvetica, sans-serif;
-            }
+<head>
+    <style type="text/css">
+                td {
+                    font-family: 'Lato', Arial, Helvetica, sans-serif;
+                }
 
-            td:first-child {
-                text-align: right;
-                vertical-align: top;
-                width: 30%;
-                color: #0074BB;
-                font-weight: bold;
-            }
+                td:first-child {
+                    text-align: right;
+                    vertical-align: top;
+                    width: 30%;
+                    color: #0074BB;
+                    font-weight: bold;
+                }
 
-            td:nth-child(2) {
-                vertical-align: top;
-                text-align: left;
-                width: 70%;
-                color: #000000;
-                font-weight: normal;
-            }
+                td:nth-child(2) {
+                    vertical-align: top;
+                    text-align: left;
+                    width: 70%;
+                    color: #000000;
+                    font-weight: normal;
+                }
 
-            p.list-opening {
-                font-family: 'Lato', Arial, Helvetica, sans-serif;
-                font-size: 26px;
-                font-weight: 300;
-                color: #003399;
-                line-height: 30px;
-            }
+                p.list-opening {
+                    font-family: 'Lato', Arial, Helvetica, sans-serif;
+                    font-size: 26px;
+                    font-weight: 300;
+                    color: #003399;
+                    line-height: 30px;
+                }
 
-            p.list-header {
-                font-family: 'Lato', Arial, Helvetica, sans-serif;
-                font-size: 22px;
-                font-weight: 300;
-                color: #003399;
-                line-height: 24px;
-                margin: 15px 0px 10px 0px;
-                text-transform: uppercase;
-            }
+                p.list-header {
+                    font-family: 'Lato', Arial, Helvetica, sans-serif;
+                    font-size: 22px;
+                    font-weight: 300;
+                    color: #003399;
+                    line-height: 24px;
+                    margin: 15px 0px 10px 0px;
+                    text-transform: uppercase;
+                }
 
-            p.paragraph {
-                font-family: 'Lato', Arial, Helvetica, sans-serif;
-                font-size: 14px;
-                font-weight: 300;
-                color: #003399;
-            }
-</style>
-        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400" rel="stylesheet" type="text/css" />
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    </head>
-    <body>
-        <p class="list-opening">The Aspen Ideas Festival is pleased to announce the 2018 Aspen Ideas Festival Scholars, a diverse group of 300 leaders from all over the United States and 30 different countries selected for their work, accomplishments, and ability to transform ideas into action.</p>
-        <p class="paragraph">They were nominated by senior members of the Institute&#39;s staff, Festival advisors, past scholars, and many others within the Institute&#39;s broad network. The scholars&#39; presence at the Festival is made possible by a group of patrons whose purchase of special patron passes directly funds this important program. The Aspen Institute is proud to host these distinguished scholars and grateful to the patrons for their crucial support.</p>
-        <p class="paragraph">Another set of scholars who will attend the Aspen Ideas Festival is the <strong>Bezos Scholars</strong>. Thirty high school students and exceptional educators from across the US and the African Leadership Academy were selected to attend as part of a leadership development program.</p>
-        <p class="paragraph" style="font-size:18px;"><a href="#festival-title">2018 Aspen Ideas Festival Scholars</a></p>
-        <p class="paragraph" style="font-size:18px;"><a href="#avd-title">2018 Arthur Vining Davis Scholars</a></p>
-        <p class="paragraph" style="font-size:18px;"><a href="#sh-title">2018 Spotlight Health Scholars</a></p>
-        <p class="paragraph" style="font-size:18px;"><a href="#bezos-title">2018 Bezos Family Foundation: Bezos Scholars</a></p>
-        <p class="paragraph" style="font-size:18px;"><a href="#ifill-title">2018 Ifill Scholars, in memory of Gwen Ifill</a></p>
-        <hr>
-        <p class="list-header" id="festival-title">2018 Aspen Ideas Festival Scholars</p>
-        <div id="festival"></div>
-        <p class="list-header" id="avd-title">2018 Arthur Vining Davis Scholars</p>
-        <div id="avd"></div>
-        <p class="list-header" id="sh-title">2018 Spotlight Health Scholars</p>
-        <div id="sh"></div>
-        <p class="list-header" id="bezos-title">2018 Bezos Family Foundation: Bezos Scholars</p>
-        <div id="bezos"></div>
-        <p class="list-header" id="ifill-title">2018 Ifill Scholars, in memory of Gwen Ifill</p>
-        <div id="ifill"></div>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
-        <script id="list-template" type="text/x-handlebars-template">
-            <table>
-                <tbody>
-                    {{#each scholars}}
-                    <tr>
-                        <td>{{this.name}}</td>
-                        <td>{{this.position}}</td>
-                    </tr>
-                    {{/each}}
-                </tbody>
-            </table>
-        </script>
-    </body>
+                p.paragraph {
+                    font-family: 'Lato', Arial, Helvetica, sans-serif;
+                    font-size: 14px;
+                    font-weight: 300;
+                    color: #003399;
+                }
+    </style>
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400" rel="stylesheet" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+    <p class="list-opening">The Aspen Ideas Festival is pleased to announce the 2018 Aspen Ideas Festival Scholars, a diverse group of 300 leaders from all over the United States and 30 different countries selected for their work, accomplishments, and ability to transform ideas into action.</p>
+    <p class="paragraph">They were nominated by senior members of the Institute&#39;s staff, Festival advisors, past scholars, and many others within the Institute&#39;s broad network. The scholars&#39; presence at the Festival is made possible by a group of patrons whose purchase of special patron passes directly funds this important program. The Aspen Institute is proud to host these distinguished scholars and grateful to the patrons for their crucial support.</p>
+    <p class="paragraph">Another set of scholars who will attend the Aspen Ideas Festival is the <strong>Bezos Scholars</strong>. Thirty high school students and exceptional educators from across the US and the African Leadership Academy were selected to attend as part of a leadership development program.</p>
+    <p class="paragraph" style="font-size:18px;"><a href="#festival-title">2018 Aspen Ideas Festival Scholars</a></p>
+    <p class="paragraph" style="font-size:18px;"><a href="#avd-title">2018 Arthur Vining Davis Scholars</a></p>
+    <p class="paragraph" style="font-size:18px;"><a href="#kipp-title">2018 KIPP Accelerator Aspen Fellows</a></p>
+    <p class="paragraph" style="font-size:18px;"><a href="#sh-title">2018 Spotlight Health Scholars</a></p>
+    <p class="paragraph" style="font-size:18px;"><a href="#bezos-title">2018 Bezos Family Foundation: Bezos Scholars</a></p>
+    <p class="paragraph" style="font-size:18px;"><a href="#ifill-title">2018 Ifill Scholars, in memory of Gwen Ifill</a></p>
+    <hr>
+    <p class="list-header" id="festival-title">2018 Aspen Ideas Festival Scholars</p>
+    <div id="festival"></div>
+    <p class="list-header" id="avd-title">2018 Arthur Vining Davis Scholars</p>
+    <div id="avd"></div>
+    <p class="list-header" id="kipp-title">2018 KIPP Accelerator Aspen Fellows</p>
+    <div id="kipp"></div>
+    <p class="list-header" id="sh-title">2018 Spotlight Health Scholars</p>
+    <div id="sh"></div>
+    <p class="list-header" id="bezos-title">2018 Bezos Family Foundation: Bezos Scholars</p>
+    <div id="bezos"></div>
+    <p class="list-header" id="ifill-title">2018 Ifill Scholars, in memory of Gwen Ifill</p>
+    <div id="ifill"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+    <script id="list-template" type="text/x-handlebars-template">
+        <table>
+            <tbody>
+                {{#each scholars}}
+                <tr>
+                    <td>{{this.name}}</td>
+                    <td>{{this.position}}</td>
+                </tr>
+                {{/each}}
+            </tbody>
+        </table>
+    </script>
+</body>
 <script type="text/javascript">
-
         const key = '1_sbK4ai2T0tZpu0yJcSep6Hm8NgeDReUkz8EqtS9q6A';
 
         var aifScholars = {scholars: []};
         var avdScholars = {scholars: []};
-        var bushScholars = {scholars: []};
+        var kippScholars = {scholars: []};
         var shScholars = {scholars: []};
         var bezosScholars = {scholars: []};
         var ifillScholars = {scholars:[]};
@@ -118,9 +121,10 @@
         function renderLists() {
             AJAX('festival', key + '/1', aifScholars);
             AJAX('avd', key + '/2', avdScholars);
-            AJAX('sh', key + '/3', shScholars);
-            AJAX('bezos', key + '/4', bezosScholars);
-            AJAX('ifill',key + '/5', ifillScholars)
+            AJAX('kipp', key + '/3', kippScholars)
+            AJAX('sh', key + '/4', shScholars);
+            AJAX('bezos', key + '/5', bezosScholars);
+            AJAX('ifill', key + '/6', ifillScholars)
         }
 
         window.onload = renderLists;
